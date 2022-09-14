@@ -1,0 +1,142 @@
+:root {
+    --main-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --background-color: #2F303A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+
+
+
+/* Header */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    color: var(--accent-color);
+}
+
+.logo-black {
+    color: #000000;
+}
+
+.list {
+    list-style: none;
+}
+
+.nav-item {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--title-color);
+}
+
+.contacs {
+    color: var(--main-color);
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--background-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: none;
+}
+
+
+/* Our advantages */
+
+.secondary-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+
+/* What do we do? */
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-color);
+}
+
+
+/* Our team */
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: var(--title-color);
+}
+
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.19px;
+}
+
+
+/* Footer */
+
+.address {
+    background-color: var(--background-color);
+}
+
+.address-item,
+.address-list-item {
+    text-decoration: none;
+    font-style: normal;
+
+    color: var(--white-color);
+}
+
+.address-list-item {
+    color: rgba(255, 255, 255, 0.6);
+}
