@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --background-color: #2F303A;
+    --secondary-babackground-color: #F5F4FA;
 }
 
 body {
@@ -49,8 +50,17 @@ body {
     color: var(--title-color);
 }
 
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
+
 .contacs {
     color: var(--main-color);
+}
+
+.current {
+    color: var(--accent-color);
 }
 
 /* Hero */
@@ -71,6 +81,7 @@ body {
 }
 
 .button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -79,6 +90,8 @@ body {
     color: var(--white-color);
     background-color: var(--accent-color);
     border: none;
+
+    cursor: pointer;
 }
 
 
@@ -100,13 +113,16 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
 
     color: var(--title-color);
 }
 
 
 /* Our team */
+
+.team {
+    background: var(--secondary-babackground-color);
+}
 
 .team-title {
     font-weight: 500;
@@ -115,7 +131,6 @@ body {
 
     color: var(--title-color);
 }
-
 
 .team-position {
     font-size: 16px;
@@ -139,4 +154,41 @@ body {
 
 .address-list-item {
     color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Portfolio */
+
+.portfolio-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border: none;
+
+    color: var(--title-color);
+    background-color: var(--secondary-babackground-color);
+
+    cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--title-color);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
 }
