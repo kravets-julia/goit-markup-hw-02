@@ -86,20 +86,33 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    cursor: pointer;
 
     color: var(--white-color);
     background-color: var(--accent-color);
     border: none;
-
-    cursor: pointer;
 }
 
 
 /* Our advantages */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 .secondary-title {
     font-size: 14px;
-    font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 
@@ -110,7 +123,6 @@ body {
 /* What do we do? */
 
 .title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 
@@ -140,8 +152,12 @@ body {
 
 /* Footer */
 
-.address {
+.footer {
     background-color: var(--background-color);
+}
+
+.logo-white {
+    color: var(--white-color);
 }
 
 .address-item,
@@ -166,11 +182,10 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     border: none;
+    cursor: pointer;
 
     color: var(--title-color);
     background-color: var(--secondary-babackground-color);
-
-    cursor: pointer;
 }
 
 .portfolio-button:hover,
@@ -180,7 +195,6 @@ body {
 }
 
 .portfolio-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
