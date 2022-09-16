@@ -5,6 +5,7 @@
     --white-color: #FFFFFF;
     --background-color: #2F303A;
     --secondary-babackground-color: #F5F4FA;
+    --card-background: #FFFFFF;
 }
 
 body {
@@ -87,10 +88,13 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     color: var(--white-color);
     background-color: var(--accent-color);
-    border: none;
+
 }
 
 
@@ -136,6 +140,20 @@ body {
     background: var(--secondary-babackground-color);
 }
 
+
+.team-item {
+    width: 270px;
+    height: 368px;
+
+    background: var(--card-background);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
@@ -172,6 +190,15 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.address-item:hover,
+.address-item:focus,
+.address-list-item:hover,
+.address-list-item:focus {
+    color: var(--accent-color);
+}
+
+
+
 
 /* Portfolio */
 
@@ -182,6 +209,7 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 
     color: var(--title-color);
@@ -192,6 +220,9 @@ body {
 .portfolio-button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .portfolio-title {
